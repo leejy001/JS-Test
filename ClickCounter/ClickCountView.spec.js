@@ -1,9 +1,10 @@
 describe("App.ClickCountView", () => {
-  let updateEl, triggerEl, clickCounter, view;
+  let updateEl, triggerEl, clickCounter, view, data;
   beforeEach(() => {
     updateEl = document.createElement("span");
     triggerEl = document.createElement("button");
-    clickCounter = App.ClickCounter();
+    data = { value: 0 };
+    clickCounter = App.ClickCounter(data);
     view = App.ClickCountView(clickCounter, { updateEl, triggerEl });
   });
 
