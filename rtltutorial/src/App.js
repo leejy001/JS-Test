@@ -4,6 +4,7 @@ import MyPage from "./component/MyPage";
 import InfoInputs from "./component/InfoInputs";
 import UserList from "./component/UserList";
 import Login from "./component/Login";
+import TodoList from "./component/TodoList";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <InfoInputs />
       <UserList users={["Tom", "Jane", "Mike"]} />
       <Login />
+      <TodoList />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
