@@ -1,6 +1,14 @@
 import { render, screen } from "@testing-library/react";
 import MyPage from "./MyPage";
 
+test("제목이 있다", () => {
+  render(<MyPage />);
+  const titleEl = screen.getByRole("heading", {
+    level: 1
+  });
+  expect(titleEl).toBeInTheDocument();
+});
+
 test("유저가 없으면 로그인 문구와 버튼을 보여준다.", () => {
   render(<MyPage />);
   const txtEl = screen.getByText(/로그인을 해주세요/);

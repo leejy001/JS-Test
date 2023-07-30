@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import MyPage from "./component/MyPage";
+import InfoInputs from "./component/InfoInputs";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <MyPage />
       <MyPage user="kim" />
       <MyPage user={{ name: "kim" }} />
+      <InfoInputs />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
