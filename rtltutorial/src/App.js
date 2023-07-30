@@ -3,6 +3,7 @@ import "./App.css";
 import MyPage from "./component/MyPage";
 import InfoInputs from "./component/InfoInputs";
 import UserList from "./component/UserList";
+import Login from "./component/Login";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <MyPage user={{ name: "kim" }} />
       <InfoInputs />
       <UserList users={["Tom", "Jane", "Mike"]} />
+      <Login />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
