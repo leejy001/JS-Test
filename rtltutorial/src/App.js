@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import MyPage from "./component/MyPage";
 import InfoInputs from "./component/InfoInputs";
+import UserList from "./component/UserList";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <MyPage user="kim" />
       <MyPage user={{ name: "kim" }} />
       <InfoInputs />
+      <UserList users={["Tom", "Jane", "Mike"]} />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
